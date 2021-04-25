@@ -1,3 +1,14 @@
+body {
+    font-size: 20px;
+    color: #707070
+}
+
+.heading {
+    font-size: 50px;
+    color:#491A12;
+}
+
+
 .flexContainer {
     display: flex;
     height: 100vh;
@@ -10,11 +21,9 @@
 
 .toggleContainer {
     display: flex;
-    border: 2px solid rgb(157, 157, 158);
     position: absolute;
     top: 10px;
     right: 10px;
-    border: 2px solid orange;
 }
 
 .halfContainer {
@@ -22,13 +31,30 @@
     width: 49vw;
     justify-content: center;
     align-items: center;
-    border: 2px solid purple;
     height: 80vh;
+    position: relative;
+    
 }
 
 .textContainer {
+    margin-left: 30px;
     display: flex;
     flex-direction: column;
-    border: 2px solid green;
-    width: 25vw;
+    width: 15vw;
+
+
+    :not(:nth-child(1):nth-child(2):nth-child(4)) {
+        margin-bottom: 20px;
+    }
+  
+   
+}
+
+
+.arrow {
+    max-width: 60px;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    cursor: pointer;
 }

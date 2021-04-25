@@ -5,6 +5,7 @@
     border-radius: 50%;
     width: 350px;
     height: 350px;
+
 }
 
 
@@ -12,7 +13,7 @@
     position: absolute;
     display: flex;
     bottom: 0;
-    left: 25%;
+    left: 26.5%;
 }
 
 .infoBox {
@@ -23,6 +24,7 @@
     font-size: 12px;
     padding: 5px;
     text-align: center;
+    cursor: pointer;
 }
 
 .infoBox:not(:first-child) {

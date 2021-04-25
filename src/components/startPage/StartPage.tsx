@@ -3,6 +3,9 @@ import ToggleMenu from "../ToggleMenu/ToggleMenu"
 import ImageHolder from "./ImageHolder/ImageHolder"
 import TextHolder from "./TextHolder/TextHolder"
 import styles from "./startPage.module.scss"
+import arrowIcon from "../../resources/icons/arrow.svg"
+
+
 
 
 
@@ -12,7 +15,9 @@ interface Props {
 
 const StartPage = (props: Props) => {
 
-    const helloHeading: string = "Hello there.";
+
+    // how this is implemented could could be improved
+    const helloHeading: string = "Hi there.";
     const helloText: string = "My name is Anna. I’m a Stockholm based developer with a passion for good design and creating unforgettable experiences. ";
     const skillsHeading: string = "Top skills"
     const skillsText: string = "JavaScript Python React.js CSS"
@@ -30,6 +35,8 @@ const StartPage = (props: Props) => {
                 </div>
             <div className={styles.halfContainer}>
                 <ImageHolder/>
+                <img className={styles.arrow} src={arrowIcon}></img>
+                
             </div>
             
         </div>
