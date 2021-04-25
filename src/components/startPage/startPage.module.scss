@@ -1,0 +1,34 @@
+.flexContainer {
+    display: flex;
+    height: 100vh;
+    background-color: #D3D9DF;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+
+}
+
+.toggleContainer {
+    display: flex;
+    border: 2px solid rgb(157, 157, 158);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 2px solid orange;
+}
+
+.halfContainer {
+    display: flex;
+    width: 49vw;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid purple;
+    height: 80vh;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid green;
+    width: 25vw;
+}
