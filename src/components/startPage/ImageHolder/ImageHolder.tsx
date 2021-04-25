@@ -1,6 +1,10 @@
 import React from 'react'
-import ProfilePic from "../../../resources/icons/oval.svg"
+
+import InfoBox from "./InfoBox/InfoBox"
+
 import styles from "./imageHolder.module.scss"
+
+
 
 interface Props {
     
@@ -9,7 +13,10 @@ interface Props {
 const ImageHolder = (props: Props) => {
     return (
         <div className={styles.imageContainer}>
-             <img className={styles.image} src={ProfilePic} />
+             <div className={styles.infoBoxesContainer}>
+                <InfoBox infoText={"Education"}/>
+                <InfoBox infoText={"Proffesional experience"}/>
+             </div>
         </div>
     )
 }

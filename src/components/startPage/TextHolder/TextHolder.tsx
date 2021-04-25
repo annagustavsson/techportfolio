@@ -3,8 +3,7 @@ import styles from "./textHolder.module.scss"
 
 interface Props {
     header : string,
-    text : string
-    
+    text : string,
 }
 
 const TextHolder = ({header, text}: Props) => {
