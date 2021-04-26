@@ -1,0 +1,25 @@
+.toggleContainer {
+    display: flex;
+
+    
+}
+
+.toggleButton {
+    height: 50px;
+    width: 70px;
+    text-align: center;
+    padding: 20px 5px 0px 5px;
+    cursor: pointer;
+}
+
+.hover {
+    background-color: #F7F7F8;
+    // kanske vore snyggt med bakgrundsfärg på hover och underline på click
+}
+
+.active {
+    background-color: #F7F7F8;
+    text-decoration: underline;
+    
+
+}

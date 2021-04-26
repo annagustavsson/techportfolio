@@ -1,5 +1,6 @@
 import React from 'react'
-import ToggleMenu from "../ToggleMenu/ToggleMenu"
+//import ToggleMenu from "../ToggleMenu/ToggleMenu"
+import ToggleMenu from "../general/ToggleMenu/ToggleMenu"
 import ImageHolder from "./ImageHolder/ImageHolder"
 import TextHolder from "./TextHolder/TextHolder"
 import styles from "./startPage.module.scss"
@@ -25,8 +26,7 @@ const StartPage = (props: Props) => {
     return (    
         <div className={styles.flexContainer}>
             <div className={styles.toggleContainer}>
-                <ToggleMenu text="About"/>
-                <ToggleMenu text="Projects"/>
+                <ToggleMenu/>
             </div>
             <div className={styles.halfContainer}>
                 <div className={styles.textContainer}>
