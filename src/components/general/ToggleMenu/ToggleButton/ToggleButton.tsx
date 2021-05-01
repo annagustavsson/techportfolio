@@ -2,14 +2,19 @@ import React from 'react'
 import styles from "../toggleMenu.module.scss"
 
 interface Props {
+    //handler : () => void,
     text : string,
-    //color: string
+    //hovered: boolean,
     //active: boolean
+    onClick: () => void
 }
 
-const ToggleButton = ({text}: Props) => {
+//className={!isClicked? classes.container : [classes.container, classes.clicked].join(" ")}
+
+const ToggleButton = ({text, onClick}: Props) => {
+
     return (
-        <div className={styles.toggleButton}>
+        <div onClick={onClick}>
             {text}
         </div>
     )

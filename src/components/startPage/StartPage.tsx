@@ -1,5 +1,5 @@
 import React from 'react'
-//import ToggleMenu from "../ToggleMenu/ToggleMenu"
+import {useHistory} from "react-router-dom";
 import ToggleMenu from "../general/ToggleMenu/ToggleMenu"
 import ImageHolder from "./ImageHolder/ImageHolder"
 import TextHolder from "./TextHolder/TextHolder"
@@ -7,14 +7,13 @@ import styles from "./startPage.module.scss"
 import arrowIcon from "../../resources/icons/arrow.svg"
 
 
-
-
-
 interface Props {
     
 }
 
 const StartPage = (props: Props) => {
+
+    let history = useHistory()
 
 
     // how this is implemented could could be improved
@@ -25,9 +24,9 @@ const StartPage = (props: Props) => {
     
     return (    
         <div className={styles.flexContainer}>
-            <div className={styles.toggleContainer}>
+            {/* <div className={styles.toggleContainer}>
                 <ToggleMenu/>
-            </div>
+            </div> */}
             <div className={styles.halfContainer}>
                 <div className={styles.textContainer}>
                     <TextHolder header={helloHeading} text={helloText}/>
@@ -35,8 +34,7 @@ const StartPage = (props: Props) => {
                 </div>
             <div className={styles.halfContainer}>
                 <ImageHolder/>
-                <img className={styles.arrow} src={arrowIcon}></img>
-                
+                <img onClick={() => history.push("/projects")} className={styles.arrow} src={arrowIcon}></img>
             </div>
             
         </div>
