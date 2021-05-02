@@ -9,7 +9,6 @@ interface Props {
     onClick: () => void
 }
 
-//className={!isClicked? classes.container : [classes.container, classes.clicked].join(" ")}
 
 const ToggleButton = ({text, onClick}: Props) => {
 

@@ -1,10 +1,10 @@
 import React from 'react'
 import {useHistory} from "react-router-dom";
-import ToggleMenu from "../general/ToggleMenu/ToggleMenu"
+import ToggleMenu from "../../ToggleMenu/ToggleMenu"
 import ImageHolder from "./ImageHolder/ImageHolder"
 import TextHolder from "./TextHolder/TextHolder"
 import styles from "./startPage.module.scss"
-import arrowIcon from "../../resources/icons/arrow.svg"
+import arrowIcon from "../../../resources/icons/arrow.svg"
 
 
 interface Props {

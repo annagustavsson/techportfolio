@@ -1,0 +1,59 @@
+.outerBorder {
+   border: 1px solid black; 
+   height: 220px;
+   width: 323px;
+   position: relative;
+   //background-color: rgb(190, 216, 216);
+   margin-right: 10px;
+   
+}
+
+
+.topWindow {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+}
+
+.circleBox {
+    display: flex;
+    margin-top: 3px;
+}
+
+.circle {
+    border: 0.5px solid black;
+    height: 13px;
+    width: 13px;
+    border-radius: 50% 50% 50% 50%;
+    margin-left: 5px;
+    
+}
+
+// make to scss variables 
+
+.ivis {
+    background-color: #EEEDF4;
+}
+
+.inWinetation {
+    background-color: #EAE9E4;
+}
+
+.newsFlash {
+    background-color: #425266;
+}
+
+.interactionDesign {
+    background-color: #70A6C3;
+}
+
+.techPortfolio {
+    background-color: #D3D9DF;
+}
+
+
+
