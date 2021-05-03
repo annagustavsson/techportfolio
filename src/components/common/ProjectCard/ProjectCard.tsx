@@ -16,15 +16,19 @@ const ProjectCard = ({id}: Props) => {
     styling.forEach((card) => {if(id === card.styleId) {currentStyle = card.styleName}})
 
     return (
-        <div className={[styles.outerBorder, currentStyle].join(" ")}>
-            <div className={styles.topWindow}>
-                <div className={styles.circleBox}>
-                    <div className={styles.circle}></div>
-                    <div className={styles.circle}></div>
-                    <div className={styles.circle}></div>
-                </div>
-                {/* Project name from context */}
-            </div> 
+        <div>
+            <div className={[styles.outerBorder, currentStyle].join(" ")}>
+                <div className={styles.topWindow}>
+                    <div className={styles.circleBox}>
+                        <div className={styles.circle}></div>
+                        <div className={styles.circle}></div>
+                        <div className={styles.circle}></div>
+                    </div>
+                    {/* Project logo from context(?) */}
+                </div> 
+            </div>
+            {/* name should be from context */}
+            <div>Project name</div>
         </div>
     )
 }

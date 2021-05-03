@@ -17,11 +17,7 @@ const ProjectsPage = (props: Props) => {
             <div className={styles.projectCardContainer}>
 
                 {projects.map((project) => <ProjectCard key={project.id} id={project.id}/>) }
-                {/* <div><ProjectCard/></div>
-                <div><ProjectCard/></div>
-                <div><ProjectCard/></div>
-                <div><ProjectCard/></div>
-                <div><ProjectCard/></div> */}
+
             </div>
         </div>
     )
