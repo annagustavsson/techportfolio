@@ -23,6 +23,7 @@ const ProjectCard = ({id}: Props) => {
                     <div className={styles.circle}></div>
                     <div className={styles.circle}></div>
                 </div>
+                {/* Project name from context */}
             </div> 
         </div>
     )

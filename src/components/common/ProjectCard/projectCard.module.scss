@@ -1,15 +1,17 @@
 .outerBorder {
    border: 1px solid black; 
+   //border-radius: 3% 3% 3% 3%;
    height: 220px;
    width: 323px;
    position: relative;
    //background-color: rgb(190, 216, 216);
-   margin-right: 10px;
+   margin: 10px 10px 10px 10px;
+
    
 }
 
 
-.topWindow {
+.topWindow { //gör genomskinlig m border så färgen är bakgrunden
     width: 100%;
     height: 20px;
     position: absolute;
@@ -17,6 +19,8 @@
     right: 0;
     left: 0;
     background-color: white;
+    border-bottom: 0px;
+    
 }
 
 .circleBox {
@@ -30,10 +34,11 @@
     width: 13px;
     border-radius: 50% 50% 50% 50%;
     margin-left: 5px;
+    background-color: #3a3939;
     
 }
 
-// make to scss variables 
+// make to scss variables in colors.module.scss
 
 .ivis {
     background-color: #EEEDF4;
