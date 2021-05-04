@@ -25,11 +25,13 @@
     max-height: 25px;
     border-radius: 10px 0px 10px 0px;
     font-size: 12px;
-    padding: 7px;
+    padding: 7px 7px 7px 8px;
     cursor: pointer;
 }
 
 .infoBox:not(:first-child) {
     margin-left: 30px;
 }
+
+
 

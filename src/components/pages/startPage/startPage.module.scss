@@ -41,11 +41,9 @@ body {
     flex-direction: column;
     width: 15vw;
 
-
     :not(:nth-child(1):nth-child(2):nth-child(4)) {
         margin-bottom: 20px;
     }
-  
    
 }
 
@@ -57,3 +55,22 @@ body {
     right: 10%;
     cursor: pointer;
 }
+
+
+.fastAnimation {
+    position: relative;
+    animation-name: left-to-right;
+    animation-duration: 4s;
+  }
+
+.slowAnimation {
+    position: relative;
+    animation-name: left-to-right;
+    animation-duration: 7s;
+  }
+  
+  @keyframes left-to-right {
+
+    0% {left: -300px; top: 0px;}
+    25% {left: 0px; top: 0px;}
+  }

@@ -29,8 +29,9 @@ const StartPage = (props: Props) => {
             </div> */}
             <div className={styles.halfContainer}>
                 <div className={styles.textContainer}>
-                    <TextHolder header={helloHeading} text={helloText}/>
-                    <TextHolder header={skillsHeading} text={skillsText}/></div>
+                    <div><TextHolder header={helloHeading} text={helloText}/></div>
+                    <div><TextHolder header={skillsHeading} text={skillsText}/></div>
+                </div>
                 </div>
             <div className={styles.halfContainer}>
                 <ImageHolder/>

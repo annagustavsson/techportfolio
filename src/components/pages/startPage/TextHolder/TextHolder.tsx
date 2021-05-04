@@ -8,9 +8,13 @@ interface Props {
 }
 
 const TextHolder = ({header, text}: Props) => {
+
+    const fastAnimation = [styles.heading, styles.fastAnimation].join(" ")
+    const slowAnimation = [styles.heading, styles.slowAnimation].join(" ")
+
     return (
         <div>
-            <div className={styles.heading}>{header}</div>
+            <div className={header === "Hi there." ? fastAnimation : slowAnimation}>{header}</div>
             <div>{text}</div>
         </div>
     )
