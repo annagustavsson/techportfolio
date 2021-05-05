@@ -18,7 +18,7 @@ const StartPage = (props: Props) => {
 
     // how this is implemented could could be improved
     const helloHeading: string = "Hi there.";
-    const helloText: string = "My name is Anna. I’m a Stockholm based developer with a passion for good design and creating unforgettable experiences. ";
+    const helloText: string = "My name is Anna. I’m a Stockholm-based software developer with a passion good design and creating unforgettable experiences.";
     const skillsHeading: string = "Top skills"
     const skillsText: string = "JavaScript Python React.js CSS"
     

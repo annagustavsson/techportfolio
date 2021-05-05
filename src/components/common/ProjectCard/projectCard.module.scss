@@ -1,15 +1,13 @@
-.outerBorder {
-   border: 1px solid black; 
-   //border-radius: 3% 3% 3% 3%;
-   height: 220px;
-   width: 323px;
-   position: relative;
-   //background-color: rgb(190, 216, 216);
-   margin: 10px 10px 10px 10px;
-
-   
+.cardContainer {
+    margin: 10px 10px 10px 10px;
 }
 
+.outerBorder {
+   border: 1px solid black; 
+   height: 220px;
+   width: 323px;
+  position: relative;
+}
 
 .topWindow { //gör genomskinlig m border så färgen är bakgrunden
     width: 100%;
@@ -37,6 +35,11 @@
     background-color: #3a3939;
     
 }
+
+.headingText {
+    margin: 3px 0px 0px 1px;
+}
+
 
 // make to scss variables in colors.module.scss
 

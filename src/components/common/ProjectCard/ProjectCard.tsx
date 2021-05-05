@@ -16,7 +16,7 @@ const ProjectCard = ({id}: Props) => {
     styling.forEach((card) => {if(id === card.styleId) {currentStyle = card.styleName}})
 
     return (
-        <div>
+        <div className={styles.cardContainer}>
             <div className={[styles.outerBorder, currentStyle].join(" ")}>
                 <div className={styles.topWindow}>
                     <div className={styles.circleBox}>
@@ -25,10 +25,10 @@ const ProjectCard = ({id}: Props) => {
                         <div className={styles.circle}></div>
                     </div>
                     {/* Project logo from context(?) */}
-                </div> 
+                </div>
             </div>
             {/* name should be from context */}
-            <div>Project name</div>
+            <div className={styles.headingText}>Project name</div>
         </div>
     )
 }

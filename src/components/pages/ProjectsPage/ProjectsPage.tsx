@@ -14,10 +14,8 @@ const ProjectsPage = (props: Props) => {
 
     return (
         <div className={styles.flexContainer}>
-            <div className={styles.projectCardContainer}>
-
+            <div className={styles.projectCardsContainer}>
                 {projects.map((project) => <ProjectCard key={project.id} id={project.id}/>) }
-
             </div>
         </div>
     )
