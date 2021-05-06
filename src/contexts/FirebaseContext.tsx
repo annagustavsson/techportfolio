@@ -1,9 +1,19 @@
 import React, { useState, useContext, useEffect } from 'react';
 import firebase from "firebase/app"
 import "firebase/firestore"
-import { timeStamp } from 'console';
+interface Props {
+  children: React.ReactNode
+}
 
-const FirebaseContext = React.createContext({});
+export interface Project {
+date: any,
+id: string,
+name: string,
+tech: Array<string>,
+text: string,
+}
+
+const FirebaseContext = React.createContext<Array<Project>>([]);
 
 
 export const useFirebase = () => {
@@ -23,15 +33,13 @@ if (!firebase.apps.length) {
     firebase.app(); // if already initialized, use that one
  }
 
- interface Props {
-    children: React.ReactNode
-}
+
 
 const FirebaseContextProvider : React.FC<Props> = ({ children }) => {
     const db = firebase.firestore();
 
 
-    const [projects, setprojects] = useState({}) //array av object
+    const [projects, setprojects] = useState<Array<Project>>([])
 
     useEffect(() => { 
         if (db) {
@@ -40,8 +48,8 @@ const FirebaseContextProvider : React.FC<Props> = ({ children }) => {
         .collection('projects')
         .orderBy('date').limit(25) //show 25 latest documents
         .onSnapshot(querySnapshot => {
-            const data = querySnapshot.docs.map(doc => ({...doc.data(), id: doc.id}));
-            setprojects(data)
+            const data : Array<any> = querySnapshot.docs.map(doc => ({...doc.data(), id: doc.id}));
+            setprojects(data); 
             console.log(data, "data")
         });
         return unsubscribe
@@ -52,10 +60,11 @@ const FirebaseContextProvider : React.FC<Props> = ({ children }) => {
 
   return (
     <FirebaseContext.Provider
-      value={{
-        //db: db,
-        projects: projects,
-      }}
+        value={projects}
+    //   value={{
+    //     //db: db,
+    //     projects: projects,
+    //   }}
     >
       {children}
     </FirebaseContext.Provider>

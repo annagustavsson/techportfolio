@@ -1,12 +1,15 @@
 import React from 'react'
-import { createAdd } from 'typescript'
+import {Project} from "../../../contexts/FirebaseContext"
+//import { createAdd } from 'typescript'
+
 import styles from "./projectCard.module.scss"
 
 interface Props {
     id: number
+    project: Project
 }
 
-const ProjectCard = ({id}: Props) => {
+const ProjectCard = ({id, project}: Props) => {
 
     const styling = [{styleId: 1, styleName: styles.ivis},{styleId: 2, styleName: styles.inWinetation}, {styleId: 3, styleName: styles.newsFlash},
     {styleId: 4, styleName: styles.interactionDesign}, {styleId: 5, styleName: styles.techPortfolio} ]
@@ -27,8 +30,7 @@ const ProjectCard = ({id}: Props) => {
                     {/* Project logo from context(?) */}
                 </div>
             </div>
-            {/* name should be from context */}
-            <div className={styles.headingText}>Project name</div>
+            <div className={styles.headingText}>{project.name}</div>
         </div>
     )
 }
