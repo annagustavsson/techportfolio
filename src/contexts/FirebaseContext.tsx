@@ -13,6 +13,7 @@ tech: Array<string>,
 text: string,
 }
 
+
 const FirebaseContext = React.createContext<Array<Project>>([]);
 
 
@@ -40,6 +41,8 @@ const FirebaseContextProvider : React.FC<Props> = ({ children }) => {
 
 
     const [projects, setprojects] = useState<Array<Project>>([])
+
+    //TODO: gör en array med currentproject
 
     useEffect(() => { 
         if (db) {
