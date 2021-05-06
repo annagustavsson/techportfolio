@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import FirebaseContextProvider from "./contexts/FirebaseContext"
 import StartPage from "./components/pages/startPage/StartPage";
 import ProjectsPage from "./components/pages/ProjectsPage/ProjectsPage"
 import ToggleMenu from "./components/ToggleMenu/ToggleMenu"
@@ -11,7 +12,7 @@ import {
 
 function App() {
   return (
-
+    <FirebaseContextProvider>
     <Router>
       <Switch>
         <div>
@@ -25,6 +26,7 @@ function App() {
         </div>
        </Switch>
      </Router>
+     </FirebaseContextProvider>
     
   );
 }
