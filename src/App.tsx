@@ -3,6 +3,7 @@ import './App.css';
 import FirebaseContextProvider from "./contexts/FirebaseContext"
 import StartPage from "./components/pages/startPage/StartPage";
 import ProjectsPage from "./components/pages/ProjectsPage/ProjectsPage"
+import ExperiencePage from "./components/pages/ExperiencePage/ExperiencePage";
 import ToggleMenu from "./components/ToggleMenu/ToggleMenu"
 import {
   BrowserRouter as Router,
@@ -13,21 +14,22 @@ import {
 function App() {
   return (
     <FirebaseContextProvider>
-    <Router>
-      <Switch>
-        <div>
+      <Router>
+        <Switch>
           <div>
-            <ToggleMenu/>
+            <div>
+              <ToggleMenu />
+            </div>
+            <div>
+              <Route path="/" exact render={() => <StartPage />} />
+              <Route path="/projects" exact render={() => <ProjectsPage />} />
+              <Route path="/experience" exact render={() => <ExperiencePage />} />
+            </div>
           </div>
-          <div>
-            <Route path="/" exact render={() => <StartPage/>}/>
-            <Route path="/projects" exact render={() => <ProjectsPage/>}/>
-          </div>
-        </div>
-       </Switch>
-     </Router>
-     </FirebaseContextProvider>
-    
+        </Switch>
+      </Router>
+    </FirebaseContextProvider>
+
   );
 }
 

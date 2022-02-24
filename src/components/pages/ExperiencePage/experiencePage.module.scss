@@ -1,0 +1,20 @@
+.pageContainer {
+    background-color: #fdfff5;
+}
+
+.flexBox {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading {
+    font-family: "Yeseva One", cursive;
+    //font-family: "Dosis", sans-serif;
+    //font-family: "Tienne", serif;
+    //font-family: "Volkhov", serif;
+    //font-family: "Amaranth", sans-serif;
+    font-size: 3rem;
+    color: #205613;
+}
