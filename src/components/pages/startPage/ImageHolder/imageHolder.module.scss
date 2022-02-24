@@ -1,19 +1,26 @@
 .imageContainer {
-    position: relative;
+    //position: relative;
     background-image: url("../../../../resources/images/PP.jpg");
     background-size: contain;
     border-radius: 50%;
-    width: 400px;
-    height: 400px;
-
+    width: 30vw;
+    height: 30vw;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
-
 .infoBoxesContainer {
-    position: absolute;
     display: flex;
+    justify-content: center;
     bottom: 0;
-    left: 26.5%;
+}
+
+.arrow {
+    max-width: 5rem;
+    position: absolute;
+    bottom: 15%;
+    right: 20%;
+    cursor: pointer;
 }
 
 .infoBox {
@@ -32,6 +39,3 @@
 .infoBox:not(:first-child) {
     margin-left: 30px;
 }
-
-
-

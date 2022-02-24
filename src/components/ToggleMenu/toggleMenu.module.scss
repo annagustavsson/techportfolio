@@ -4,25 +4,23 @@
     top: 0px;
     right: 30px;
     z-index: 1000;
-
 }
 
 .toggleButton {
     height: 50px;
-    width: 70px;
+    width: 70%;
     text-align: center;
     padding: 20px 5px 0px 5px;
     cursor: pointer;
 }
 
 .hover {
-    background-color: #F7F7F8;
+    background-color: #f7f7f8;
     // kanske vore snyggt med bakgrundsfärg på hover och underline på click
 }
 
 .active {
-    background-color: #F7F7F8;
+    // sätt denna nestad i toggleButton
+    background-color: #f7f7f8;
     text-decoration: underline;
-    
-
 }
