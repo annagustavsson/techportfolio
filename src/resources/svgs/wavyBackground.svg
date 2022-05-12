@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="893" viewBox="0 0 1920 893">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_7" data-name="Rectangle 7" width="1920" height="893" transform="translate(0 186)" fill="#d7e6f5"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_6" data-name="Rectangle 6" width="10950" height="867" fill="#d7e6f5"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <path id="Path_15" data-name="Path 15" d="M11202.286,5230.687s-516.583.516-930.838,21.431c-276.248,13.948-121.423,36.28-413.105,42.375-391.884,8.188-1003.992,15.489-1149.74-19.453-130.174-31.208-442.341-24.645-732.624-8.7-195.341,10.727-323.74,26.292-590.385,35.073-230.022,7.576-364.593-36.469-618.448-41.757-419.488-8.739-920.989,15.388-920.989,15.388l-445.276,19.453s-168.237-12.2-261.068-19.453c-13.053-1.021-27.106-1.759-40.514-2.206-168.957-5.642-449.252,18.748-703.2,12.982-175.7-3.989-325.789-27.526-585.287-26.164-303.93,1.6-376.616,24.333-688.478,34.841-339.815,11.449-48.693-35.339-368.218-28.157-124.921,2.808-176.56,14.418-271.461,19.48-152.649,8.142-346.883-9.718-395.388-10.776-84.595-1.848-167.122,12.9-289.971,19.453-159.91,8.528-357.7,8.886-405.089,0-35.553-6.669-43.588-39.937-317.588-42.375-168.133-1.5-439.2,24.029-859.556,28.766s0,762.361,0,762.361l10987.22,4.341S11202.286,5230.687,11202.286,5230.687Z" transform="translate(-28.242 -5230.687)" fill="#d7e6f5"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_5" data-name="Mask Group 5" transform="translate(0 -186)" clip-path="url(#clip-path)">
+    <g id="Component_3_2" data-name="Component 3 – 2" transform="translate(-3022 257)">
+      <g id="Mask_Group_4" data-name="Mask Group 4" clip-path="url(#clip-path-2)">
+        <g id="Mask_Group_3" data-name="Mask Group 3" transform="translate(-224.045 0.101)" clip-path="url(#clip-path-3)">
+          <rect id="Rectangle_5" data-name="Rectangle 5" width="11429.063" height="936" transform="translate(-11.284 -8.135)" fill="#d7e6f5"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

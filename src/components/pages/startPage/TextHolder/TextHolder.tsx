@@ -1,22 +1,34 @@
 import React from 'react'
 //import styles from "./textHolder.module.scss"
 import styles from "../startPage.module.scss"
+import styled from "styled-components"
+
+export const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+
+`
+
+export const Text = styled.p`
+   margin: 0px;
+`
 
 interface Props {
-    header : string,
-    text : string,
+    header: string,
+    text: string[],
 }
 
-const TextHolder = ({header, text}: Props) => {
+const TextHolder = ({ header, text }: Props) => {
 
     const fastAnimation = [styles.heading, styles.fastAnimation].join(" ")
     const slowAnimation = [styles.heading, styles.slowAnimation].join(" ")
 
     return (
-        <div>
+        <Container>
             <div className={header === "Hi there." ? fastAnimation : slowAnimation}>{header}</div>
-            <div>{text}</div>
-        </div>
+            {text.map(content =>
+                <Text>{content}</Text>)}
+        </Container>
     )
 }
 

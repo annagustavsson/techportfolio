@@ -5,9 +5,9 @@ interface Props {
     infoText: string
 }
 
-const InfoBox = ({infoText}: Props) => {
+const InfoBox = ({ infoText }: Props) => {
     return (
-        <div className={styles.infoBox}>
+        <div style={{ zIndex: 1 }} className={styles.infoBox}>
             {infoText}
         </div>
     )

@@ -1,76 +1,75 @@
 body {
-    font-size: 20px;
-    color: #707070;
+  font-size: 20px;
+  color: #707070;
+}
+
+.nameHeading {
+  font-size: 60px;
+  color: #403d88;
 }
 
 .heading {
-    font-size: 50px;
-    color: #491a12;
-    //font-weight: bold;
+  font-size: 50px;
+  color: #491a12;
 }
 
 .flexContainer {
-    display: flex;
-    height: 100vh;
-    background-color: #d3d9df;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
+  display: flex;
+  height: 100vh;
+
+  background-color: #f4f3e4; //#e6dfdf; // #d3d9df;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
 }
 
-// .toggleContainer {
-//     position: absolute;
-//     top: 0px;
-//     right: 30px;
-// }
-
 .halfContainer {
-    display: flex;
-    width: 49vw;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    position: relative;
+  display: flex;
+  width: 49vw;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  position: relative;
 }
 
 .textContainer {
-    margin-left: 30px;
-    display: flex;
-    flex-direction: column;
-    width: 15vw;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 15vw;
 
-    :not(:nth-child(1):nth-child(2):nth-child(4)) {
-        margin-bottom: 20px;
-    }
+  :not(:nth-child(1):nth-child(2):nth-child(4)) {
+    margin-bottom: 20px;
+  }
 }
 
 .arrow {
-    max-width: 5rem;
-    position: absolute;
-    bottom: 15%;
-    right: 20%;
-    cursor: pointer;
+  max-width: 5rem;
+  position: absolute;
+  bottom: 15%;
+  right: 20%;
+  cursor: pointer;
 }
 
 .fastAnimation {
-    position: relative;
-    animation-name: left-to-right;
-    animation-duration: 4s;
+  position: relative;
+  animation-name: left-to-right;
+  animation-duration: 4s;
 }
 
 .slowAnimation {
-    position: relative;
-    animation-name: left-to-right;
-    animation-duration: 7s;
+  position: relative;
+  animation-name: left-to-right;
+  animation-duration: 7s;
 }
 
 @keyframes left-to-right {
-    0% {
-        left: -300px;
-        top: 0px;
-    }
-    25% {
-        left: 0px;
-        top: 0px;
-    }
+  0% {
+    left: -300px;
+    top: 0px;
+  }
+  25% {
+    left: 0px;
+    top: 0px;
+  }
 }

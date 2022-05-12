@@ -1,21 +1,23 @@
 import React from 'react'
-import { useHistory } from "react-router-dom";
-import InfoBox from "./InfoBox/InfoBox"
 import styles from "./imageHolder.module.scss"
-import arrowIcon from "../../../../resources/icons/arrow.svg";
+import profilePicture from "../../../../resources/svgs/profilePicture.svg"
+import rightBlob from "../../../../resources/svgs/rightBlob.svg"
+
 
 const ImageHolder = () => {
 
-  let history = useHistory();
-
   return (
-    <div className={styles.imageContainer}>
-      <div className={styles.infoBoxesContainer}>
-        <InfoBox infoText={"Education"} />
-        <InfoBox infoText={"Proffesional experience"} />
+    <>
+      <div className={styles.imagesFlexBox}>
+        <img alt="irregular shape" className={styles.svgIconTranslated} style={{ height: "30vw", opacity: "0.7" }} src={rightBlob} />
+        <div className={styles.svgIcon}>
+          <div className={styles.mask1}>
+            <img className={styles.imageContainer} />
+            {/* <img alt="irregular framed portrait" style={{ height: "30vw" }} src={profilePicture} /> */}
+          </div>
+        </div>
       </div>
-      <img onClick={() => history.push("/projects")} className={styles.arrow} src={arrowIcon} />
-    </div>
+    </>
   )
 }
 

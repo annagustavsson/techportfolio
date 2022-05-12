@@ -18,16 +18,19 @@ const StartPage = (props: Props) => {
 
     // how this is implemented could could be improved
     const helloHeading: string = "Hi there.";
-    const helloText: string = "My name is Anna. I’m a Stockholm-based software developer with a passion good design and creating unforgettable experiences.";
+    const helloText: string[] = ["My name is Anna. I’m a Stockholm-based web developer."];
     const skillsHeading: string = "Top skills"
-    const skillsText: string = "TypeScript JavaScript Python React.js CSS"
+    const skillsText: string = "TypeScript JavaScript Python React.js CSS Node.js"
+
+    const skills: string[] = ["TypeScript", "JavaScript", "React.js", "Node.js", "CSS",]
+
 
     return (
         <div className={styles.flexContainer}>
             <div className={styles.halfContainer}>
                 <div className={styles.textContainer}>
                     <div><TextHolder header={helloHeading} text={helloText} /></div>
-                    <div><TextHolder header={skillsHeading} text={skillsText} /></div>
+                    <div><TextHolder header={skillsHeading} text={skills} /></div>
                 </div>
             </div>
             <div className={styles.halfContainer}>

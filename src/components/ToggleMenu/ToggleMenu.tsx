@@ -23,13 +23,13 @@ const ToggleMenu = (props: Props) => {
     return (
         <div className={styles.toggleContainer}>
             <div className={location.pathname === "/" ? activeStyles : unActiveStyle}>
-                <ToggleButton onClick={() => history.push("/")} text={"About"} />
+                <ToggleButton onClick={() => history.push("/")} text={"About me"} />
             </div>
-            <div className={location.pathname === "/projects" ? activeStyles : unActiveStyle}>
+            {/* <div className={location.pathname === "/projects" ? activeStyles : unActiveStyle}>
                 <ToggleButton onClick={() => history.push("/projects")} text={"Projects"} />
-            </div>
+            </div> */}
             <div className={location.pathname === "/experience" ? activeStyles : unActiveStyle}>
-                <ToggleButton onClick={() => history.push("/experience")} text={"Experience"} />
+                <ToggleButton onClick={() => history.push("/experience")} text={"What I do"} />
             </div>
         </div>
     )

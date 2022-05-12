@@ -1,20 +1,24 @@
 .pageContainer {
-    background-color: #fdfff5;
+  background-color: #fdfff5;
+  background-image: url("../../../resources/svgs/superWavy.svg");
+  //background-image: url("../../../resources/svgs/wavyBackground.svg");
+  background-size: cover;
 }
 
 .flexBox {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .heading {
-    font-family: "Yeseva One", cursive;
-    //font-family: "Dosis", sans-serif;
-    //font-family: "Tienne", serif;
-    //font-family: "Volkhov", serif;
-    //font-family: "Amaranth", sans-serif;
-    font-size: 3rem;
-    color: #205613;
+  font-family: "Yeseva One", cursive;
+  //font-family: "Dosis", sans-serif;
+  //font-family: "Tienne", serif;
+  //font-family: "Volkhov", serif;
+  //font-family: "Amaranth", sans-serif;
+  font-size: 3rem;
+  color: #205613;
 }

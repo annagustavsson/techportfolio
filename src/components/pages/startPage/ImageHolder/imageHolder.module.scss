@@ -1,41 +1,80 @@
 .imageContainer {
-    //position: relative;
-    background-image: url("../../../../resources/images/PP.jpg");
-    background-size: contain;
-    border-radius: 50%;
-    width: 30vw;
-    height: 30vw;
-    display: flex;
-    flex-direction: column-reverse;
+  //position: relative;
+  background-image: url("../../../../resources/images/PP.jpg");
+  background-size: contain;
+  //border-radius: 50%;
+  width: 30vw;
+  height: 30vw;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.imagesFlexBox {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.svgIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.svgIconTranslated {
+  position: absolute;
+  left: 46%;
+  top: 45%;
+  /* bring your own prefixes */
+  transform: translate(-46%, -45%);
+}
+.mask1 {
+  -webkit-mask-image: url("../../../../resources/svgs/leftBlob.svg");
+  mask-image: url("../../../../resources/svgs/leftBlob.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  width: 30vw;
+  position: relative;
 }
 
 .infoBoxesContainer {
-    display: flex;
-    justify-content: center;
-    bottom: 0;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -80%);
+  //justify-content: center;
+  border: 2px solid blue;
+  z-index: 1;
 }
 
 .arrow {
-    max-width: 5rem;
-    position: absolute;
-    bottom: 15%;
-    right: 20%;
-    cursor: pointer;
+  max-width: 5rem;
+  position: absolute;
+  bottom: 15%;
+  right: 20%;
+  cursor: pointer;
 }
 
 .infoBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    max-width: 70px;
-    max-height: 25px;
-    border-radius: 10px 0px 10px 0px;
-    font-size: 12px;
-    padding: 7px 7px 7px 8px;
-    cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  max-width: 70px;
+  max-height: 25px;
+  border-radius: 10px 0px 10px 0px;
+  font-size: 12px;
+  padding: 7px 7px 7px 8px;
+  cursor: pointer;
 }
 
 .infoBox:not(:first-child) {
-    margin-left: 30px;
+  margin-left: 30px;
 }
